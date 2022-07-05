@@ -1,12 +1,11 @@
-# GitHub Portfolio 
+# Sophie Gioffre's GitHub Portfolio 
 
 ## DESCRIPTION
-Project for MIT xPRO Certificate in Coding: Full Stack Devleopment with MERN. The files include html and css for the home page of my GitHub portfolio. The home page includes a navigation bar with links to an about page and a projects page (which includes three of my projects using GitHub Pages).
+Sophie Gioffre's Full-Stack Development portfolio website complete with a visually interesting landing page; an about page with links to connect via GitHub, LinkedIn, and email; and a portfolio page that houses screenshots, descriptions, GitHub links, and live website links to other GitHub projects.
 
 ## HOW TO RUN
 Visit the link: https://sophiegioffre.github.io
 
 ## ROADMAP TO FUTURE IMPROVEMENTS
-I would like to make the home, about, and projects pages responsive to all devises. I plan to use a media query to do this.
-
+I plan to keep this portfolio website up to date with new projects. I would also like to make the portfolio page a bit more mobile-friendly. 
 
