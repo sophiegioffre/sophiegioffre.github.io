@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=display-width, initial-scale=1">
 
   <!--Styles CSS-->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about-styles.css">
 
   <!--Google Fonts CSS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,6 @@
 <body>
 
   <div class="container">
-
     <!--NavBar-->
     <div class="nav-box">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-transparent">
@@ -34,10 +33,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="./about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./projects.html">Projects</a>
@@ -46,29 +45,47 @@
         </div>
       </nav>
     </div>
-
-    <!--Page Content-->
+    
+    <!--Content Grid-->
     <div class="content-grid">
-      <div class="text-box">
-        <h1 class="text"><span class="title">Full-Stack Developer</span><br/> passionate about creating <span class="word1">purposeful</span>, <br/> <span class="word2">user-focused</span> web applications.</h1>
+
+      <!--About-->
+      <div class="profile-container">
+        <img class="picture" src="./images/profilePicture.jpg" alt="Sophie Gioffre's Profile Picture"/>
+        <h2>Hi, I'm <span class="name">Sophie Gioffre</span>, a full-stack developer.</h2>
+        <div class="bio">
+          <p>Collaborative problem-solver skilled at adapting to new challenges and expanding my and others' understanding of new methodologies, approaches, and technologies in order to achieve desired results. <br/><br/>Proven ability to learn quickly and apply knowledge of 10+ languages, technologies, and frameworks over the course of a 30-week intensive Full-Stack Web Development program.<br/><br/>I have my B.A. in English & Education and 5+ years of customer service experience. My ability to empathize and work with people of various needs and backgrounds makes me an asset when creating user interfaces and user experiences, as well as when working with a team in an Agile environment.</p>
+        </div>
+        <hr/>
+        <div class="skills">
+          <p>JavaScript | HTML | CSS | MongoDB | ExpressJS | React | NodeJS | Git | GitHub | Bootstrap | VS Code</p>
+        </div>
+        <hr/>
       </div>
 
-      <div class="link-box">
-        <a class="action-item-container" href="./about.html">
-          <h2 class="action-item">About<span class="arrow">&#10230;</span></h2>
-        </a>
-        <br/>
-        <a class="action-item-container" href="./projects.html">
-          <h2 class="action-item">Portfolio<span class="arrow">&#10230;</span></h2>
-        </a>
+
+
+      <!--Contact Container-->
+      <div class="contact-container">
+        <div class="github">
+          <a href="https://github.com/sophiegioffre/"><img class="contact-img" src="./images/github-circle.png"/></a>
+        </div>
+
+        <div class="linkedin">
+          <a href="http://linkedin.com/in/sophiegioffre/"><img class="contact-img" src="./images/linkedin-circle.png"/></a>
+        </div>
+
+        <div class="email">
+          <a href="mailto:sogioffre@gmail.com"><img class="contact-img" src="./images/email-circle.png"/></a>
+        </div>
       </div>
+
     </div>
-
+    
   </div>
-
 
   <!-- Bootstrap JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  
 </body>
 </html>

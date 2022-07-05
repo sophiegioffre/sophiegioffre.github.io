@@ -38,77 +38,88 @@ h1, h2, h3, h4, h5, h6, a, .nav-item {
     letter-spacing: .2rem;
 }
 
+
 .content-grid {
-    max-width: 980px;
+    max-width: 840px;
+    max-height: 150vh;
+    margin: 20px auto;
+    margin-top: 75px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: .25fr 1fr 1fr;
-    gap: 3%;
-    margin: auto;
+    gap: 20px;
 }
 
 .nav-box {
-    grid-column: 1 / 4;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
-    font-size: large;
-    margin-bottom: 10%;
 }
 
-.text-box {
-    grid-column: 1 / 4;
+.projects-container {
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
-.text {
-    line-height: 2;
-}
-
-.title {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-underline-offset: 25%;
-    text-decoration-color: #8c75eb;
-}
-
-.word1 {
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-underline-offset: 25%;
-    text-decoration-color: #4f8e56;
-}
-
-.word2 {
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    text-underline-offset: 25%;
-    text-decoration-color: #b77019;
-}
-
-.link-box {
-    grid-column: 3 / 4;
+.contact-container {
+    grid-column: 1 / 2;
     grid-row: 3 / 4;
-    justify-content: end;
-    text-align: right;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
-.action-item-container {
+.page-title {
+    text-align: center;
+    color: #313638;
+}
+
+.proj {
+    display: inline-flex;
+}
+
+.img-container {
+    margin: auto 10% 10% auto;
+}
+
+.proj-img {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+	transition: all ease-in-out .2s;
+}
+
+.proj-img:hover {
+    filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+.proj-link-container {
+    display: inline-flex;
+}
+
+.proj-link {
     text-decoration: none;
     color: #313638;
-    
 }
 
-.action-item-container:hover {
+.proj-link:hover {
+    text-decoration: none;
     font-style: italic;
-    letter-spacing: .2rem;
     color: #313638;
 }
 
+.contact-img {
+    max-height: 70px;
+    max-width: 70px;
+}
 
 
-
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .content-grid {
         grid: 100%;
     }
+
     
 }

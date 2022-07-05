@@ -1,0 +1,113 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background: linear-gradient(-45deg, #c6ea8d, #fe90af);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    max-height: 80vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, a, .nav-item, p {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Arima', cursive;
+    letter-spacing: .2rem;
+}
+
+.nav-item {
+    margin: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.nav-item:hover {
+    font-style: italic;
+    letter-spacing: .2rem;
+}
+
+.content-grid {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr 1fr;
+    gap: 3%;
+    margin: auto;
+}
+
+.nav-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.profile-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.contact-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+
+.picture {
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    margin: 3%;
+    float: left;
+    shape-outside: circle(50%);
+}
+
+.name-title {
+    display: inline-block;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Arima', cursive;
+    letter-spacing: .2rem;
+}
+
+.job {
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.contact-img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+@media (max-width: 650px){
+	.grid-container {
+		grid-template-columns: 100%;
+        grid-template-rows: 100%;
+	}
+    .picture {
+        float: none;
+        shape-outside: none;
+        margin-left: 15%;
+        margin-right: auto;
+    }
+}
