@@ -2,8 +2,9 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     background: linear-gradient(-45deg, #c6ea8d, #fe90af);
     background-size: 400% 400%;
+    background-repeat: repeat;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 @keyframes gradient {
@@ -50,13 +51,12 @@ h1, h2, h3, h4, h5, h6, a, .nav-item {
 .nav-box {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    font-size: large;
-    margin-bottom: 10%;
 }
 
 .text-box {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
+    margin-top: 8%;
 }
 
 .text {

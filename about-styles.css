@@ -2,8 +2,9 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     background: linear-gradient(-45deg, #c6ea8d, #fe90af);
     background-size: 400% 400%;
+    background-repeat: repeat;
     animation: gradient 15s ease infinite;
-    max-height: 80vh;
+    max-height: 100vh;
 }
 
 @keyframes gradient {
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5, h6, a, .nav-item, p {
     max-width: 980px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .25fr;
     gap: 3%;
     margin: auto;
 }
